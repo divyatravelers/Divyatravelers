@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Divya Travels</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#fff;
+color:#222;
+}
+
+header{
+width:100%;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1600&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+min-height:100vh;
+display:flex;
+align-items:center;
+padding:60px;
+}
+
+.hero{
+max-width:700px;
+color:white;
+}
+
+.logo{
+width:120px;
+background:white;
+padding:10px;
+border-radius:50%;
+margin-bottom:20px;
+}
+
+.hero h1{
+font-size:65px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+line-height:1.8;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:#f5b400;
+color:#000;
+text-decoration:none;
+border-radius:40px;
+margin-right:15px;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#fff;
+}
+
+.section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:45px;
+margin-bottom:20px;
+}
+
+.section-sub{
+text-align:center;
+color:#666;
+margin-bottom:50px;
+font-size:18px;
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about p{
+line-height:1.9;
+margin-bottom:20px;
+color:#555;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.service-box{
+background:#fff;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.service-box:hover{
+transform:translateY(-8px);
+}
+
+.service-box h3{
+margin:15px 0;
+}
+
+.packages{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.card{
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+.card-content{
+padding:25px;
+}
+
+.card-content h3{
+margin-bottom:10px;
+font-size:24px;
+}
+
+.price{
+color:#f5b400;
+font-size:28px;
+font-weight:700;
+margin:10px 0;
+}
+
+.card-content p{
+line-height:1.8;
+color:#555;
+margin-bottom:20px;
+}
+
+.btn-small{
+display:inline-block;
+padding:12px 24px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+margin-right:10px;
+margin-top:10px;
+}
+
+.details{
+background:#f5b400;
+color:black;
+}
+
+.contact{
+border:2px solid black;
+color:black;
+}
+
+.cta{
+background:black;
+color:white;
+text-align:center;
+padding:100px 20px;
+}
+
+.cta h2{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.cta p{
+max-width:700px;
+margin:auto;
+line-height:1.9;
+margin-bottom:30px;
+color:#ddd;
+}
+
+footer{
+background:#111;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+footer p{
+margin-top:15px;
+color:#bbb;
+}
+
+@media(max-width:900px){
+
+.hero h1{
+font-size:45px;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.section-title{
+font-size:35px;
+}
+
+.cta h2{
+font-size:35px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+
+<img src="logo.png" class="logo">
+
+<h1>Divya Travels</h1>
+
+<p>
+Explore India & The World With Confidence.
+Discover unforgettable travel experiences with customized domestic and international tour packages, visa assistance, hotel bookings, flights, honeymoon packages and more.
+</p>
+
+<a href="#packages" class="btn">Explore Packages</a>
+
+<a href="tel:+919891379934" class="btn">Contact Us</a>
+
+</div>
+</header>
+
+<section class="section">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1200&auto=format&fit=crop">
+
+<div>
+
+<p>
+Welcome to Divya Travels — your trusted travel partner for unforgettable journeys across India and around the world.
+</p>
+
+<p>
+We specialize in Domestic Tours, International Packages, Honeymoon Trips, Visa Assistance, Flight Booking, Hotel Reservations and Customized Travel Planning.
+</p>
+
+<p>
+Our mission is to provide the best travel experience possible within your budget and schedule while ensuring comfort, safety and unforgettable memories.
+</p>
+
+<p>
+Whether you are planning a family vacation, romantic honeymoon, solo adventure or international getaway, Divya Travels makes every journey smooth and memorable.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" style="background:#f8f8f8;">
+
+<h2 class="section-title">Our Services</h2>
+
+<p class="section-sub">
+Premium travel solutions for every destination.
+</p>
+
+<div class="services">
+
+<div class="service-box">
+<h3>Visa Assistance</h3>
+<p>Quick and hassle-free visa support for international travel.</p>
+</div>
+
+<div class="service-box">
+<h3>International Tours</h3>
+<p>Luxury international holiday packages with complete planning.</p>
+</div>
+
+<div class="service-box">
+<h3>Domestic Holidays</h3>
+<p>Explore India's most beautiful destinations with affordable packages.</p>
+</div>
+
+<div class="service-box">
+<h3>Hotel Booking</h3>
+<p>Best hotel deals and comfortable stay arrangements worldwide.</p>
+</div>
+
+<div class="service-box">
+<h3>Flight Booking</h3>
+<p>Affordable flight booking with easy travel assistance.</p>
+</div>
+
+<div class="service-box">
+<h3>Honeymoon Packages</h3>
+<p>Romantic honeymoon destinations specially designed for couples.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="packages">
+
+<h2 class="section-title">India Tour Packages</h2>
+
+<p class="section-sub">
+Discover India's most loved destinations.
+</p>
+
+<div class="packages">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1589308454676-22a0df7d84b?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Mesmerizing Andaman</h3>
+<div class="price">₹17,999</div>
+<p>5D/4N package with beaches, island hopping, water sports and relaxing vacation experience.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Kerala Tour</h3>
+<div class="price">₹9,999</div>
+<p>Backwaters, greenery, houseboats and peaceful nature experience package.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Goa Delight</h3>
+<div class="price">₹9,999</div>
+<p>4D/3N Goa package with beaches, nightlife and fun water activities.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1598091383021-15ddea10925d?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Kashmir Solo Package</h3>
+<div class="price">₹14,499</div>
+<p>Explore Srinagar valleys, mountains and scenic sightseeing destinations.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Leh-Ladakh Tour</h3>
+<div class="price">₹65,999</div>
+<p>Adventure bike rides, lakes, mountains and thrilling high-altitude experience.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Shimla Honeymoon</h3>
+<div class="price">₹8,999</div>
+<p>Romantic getaway with beautiful sightseeing and peaceful hill station views.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="section" style="background:#f8f8f8;">
+
+<h2 class="section-title">International Tour Packages</h2>
+
+<p class="section-sub">
+Luxury international travel experiences.
+</p>
+
+<div class="packages">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Dubai Tour</h3>
+<div class="price">₹54,990</div>
+<p>Luxury Dubai package with shopping, desert safari and sightseeing.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1525625293386-3f8f99389edd?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Singapore Tour</h3>
+<div class="price">₹60,099</div>
+<p>Family-friendly attractions, theme parks and luxury travel experience.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1573843981267-be1999ff37cd?q=80&w=1200&auto=format&fit=crop">
+<div class="card-content">
+<h3>Maldives Tour</h3>
+<div class="price">₹94,990</div>
+<p>Premium beach resort honeymoon and luxury island vacation package.</p>
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn-small details">More Details</a>
+<a href="tel:+919891379934" class="btn-small contact">Contact Us</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Ready For Your Next Journey?</h2>
+
+<p>
+Book your dream vacation today with Divya Travels and enjoy premium travel planning, customized tours and complete support.
+</p>
+
+<a href="https://forms.gle/4sg8dcT8HP7iEQhT6" class="btn">Enquire Now</a>
+
+<a href="tel:+919891379934" class="btn">Call Now</a>
+
+</section>
+
+<footer>
+
+<img src= "logo.png">
+
+<h2 style="margin-top:20px;">Divya Travels</h2>
+
+<p>
+Your trusted travel partner for domestic and international holidays.
+</p>
+
+<p>
+📞 +91 98913 79934
+</p>
+
+<p>
+© 2026 Divya Travels. All Rights Reserved.
+</p>
+
+</footer>
+
+</body>
+</html>
+```
